@@ -3,4 +3,4 @@ project(scan_service)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(scan_service main.cpp)
+add_executable(scan_service main.cpp dir_scanner.cpp dir_scanner.h)
