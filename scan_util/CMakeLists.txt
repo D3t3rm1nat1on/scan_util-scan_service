@@ -3,4 +3,4 @@ project(scan_util)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(scan_util main.cpp)
+add_executable(scan_util main.cpp ../include/socket.h ../include/socket.cpp)

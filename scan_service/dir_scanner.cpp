@@ -42,7 +42,7 @@ int scan_directory(const char *dir, scan_results &results)
 
   for (const auto &iter : std::filesystem::directory_iterator{path})
   {
-    cv.wait(lock, [&] {
+    cv.wait(lock, [] {
         return available_threads_counter > 0;
     });
     ++results.file_counter;
