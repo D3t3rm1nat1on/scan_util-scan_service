@@ -22,6 +22,8 @@ int main()
 
   listen(socket_fd, BACKLOG);
 
+  printf("\r== Scan service is started ==\n");
+
   while (true)
   {
     size_t msg_len;
